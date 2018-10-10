@@ -7,6 +7,11 @@
 <iframe id="inner" src="./inner.html"></iframe>
 
 <script>
+  console.log('------------ top -----------------');
+  console.log('[top]', 'window', window);
+  console.log('[top]', 'window.frameElement', window.frameElement);
+
+  console.log('------------ top.inner ---------------');
   const inner = document.querySelector('#inner');
   console.log('[top]', 'inner.contentWindow:', inner.contentWindow);
   console.log('[top]', 'inner.contentWindow.document', inner.contentWindow.document);

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "file": "open index.html",
+    "http": "http-server . -c-1 --cors -o"
+  },
+  "devDependencies": {
+    "http-server": "0.11.1"
+  }
+}
