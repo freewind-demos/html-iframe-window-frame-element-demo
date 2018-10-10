@@ -3,6 +3,14 @@
 <head>
 </head>
 <body>
-<div>Hello, World!</div>
+<h1>Top</h1>
+<iframe id="inner" src="./inner.html"></iframe>
+
+<script>
+  const inner = document.querySelector('#inner');
+  console.log('[top]', 'inner.contentWindow:', inner.contentWindow);
+  console.log('[top]', 'inner.contentWindow.document', inner.contentWindow.document);
+  console.log('[top]', 'inner.contentWindow.frameElement', inner.contentWindow.frameElement);
+</script>
 </body>
 </html>
